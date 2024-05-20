@@ -14,7 +14,7 @@ function Authenticate() {
     <div className="authenticate">
       <div className="auth__left">
         <img
-          src="https://i.imgur.com/P3Vm1Kq.png"
+          src="https://www.bates.edu/communications-marketing/files/2017/05/bates-wordmark-201.png"
           alt="Instagram Screenshots"
         />
       </div>

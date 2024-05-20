@@ -25,7 +25,7 @@ function Sidenav() {
     <div className="sidenav">
       <img
         className="sidenav__logo"
-        src="https://www.pngkey.com/png/full/828-8286178_mackeys-work-needs-no-elaborate-presentation-or-distracting.png"
+        src="https://www.bates.edu/communications-marketing/files/2017/05/bates-wordmark-black.png"
         alt="Instagram Logo"
       />
 
