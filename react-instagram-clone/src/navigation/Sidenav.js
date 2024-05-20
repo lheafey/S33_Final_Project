@@ -28,7 +28,6 @@ function Sidenav() {
         src="https://www.bates.edu/communications-marketing/files/2017/05/bates-wordmark-black.png"
         alt="Instagram Logo"
       />
-
       <div className="sidenav__buttons">
         <button className="sidenav__button">
           <HomeIcon />
@@ -41,10 +40,6 @@ function Sidenav() {
         <button className="sidenav__button">
           <ExploreIcon />
           <span>Explore</span>
-        </button>
-        <button className="sidenav__button">
-          <SlideshowIcon />
-          <span>Reels</span>
         </button>
         <button className="sidenav__button">
           <ChatIcon />

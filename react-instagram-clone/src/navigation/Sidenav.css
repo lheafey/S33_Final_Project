@@ -4,11 +4,15 @@
   flex-direction: column;
   justify-content: space-between;
   z-index: 1;
+  background-color: #800000; 
+  width: 250px;
+  height: 100%;
+  padding: 20px;
 }
 
 .sidenav__logo {
   width: 120px;
-  margin: 25px;
+  margin: 5px;
 }
 
 .sidenav__buttons {
@@ -23,39 +27,40 @@
   color: white;
   background: 0;
   border: 0;
-  margin: 5px 10px 5px 10px;
-  padding: 10px 15px 10px 15px;
-  border-radius: 15px;
-  width: 100%;
+  margin: 10px 0;
+  padding: 25px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
 .sidenav__button:hover {
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.128);
+  background-color: rgba(255, 255, 255, 0.2); 
 }
 
 .sidenav__button > span {
   font-size: 18px;
-  font-weight: bolder;
+  font-weight: bold;
   margin-left: 10px;
 }
 
 .sidenav__more {
   position: fixed;
-  bottom: 3px;
+  bottom: 20px;
 }
 
 .logout__button {
   font-size: 15px;
   border-radius: 10px;
   font-weight: bold;
-  color: white;
-  background-color: rgba(255, 255, 255, 0.211);
+  color: #800000; 
+  background-color: white; 
   border: 0;
-  padding: 10px;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
 }
 
 .logout__button:hover {
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.424);
+  background-color: #d3d3d3; 
 }

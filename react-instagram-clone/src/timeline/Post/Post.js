@@ -7,7 +7,7 @@ import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 
-function Post({ user, postImage, likes, timestamp }) {
+function Post({ user, postImage, text, likes, timestamp, rating }) {
   return (
     <div className="post">
       <div className="post__header">
@@ -19,8 +19,13 @@ function Post({ user, postImage, likes, timestamp }) {
         </div>
         <MoreHorizIcon />
       </div>
-      <div className="post__image">
-        <img src={postImage} alt="Post Image" />
+      <div className="post__content">
+        {text && <p className="post__text">{text}</p>}
+        {postImage && (
+          <div className="post__image">
+            <img src={postImage} alt="Post" />
+          </div>
+        )}
       </div>
       <div className="post__footer">
         <div className="post__footerIcons">
@@ -33,7 +38,9 @@ function Post({ user, postImage, likes, timestamp }) {
             <BookmarkBorderIcon className="postIcon" />
           </div>
         </div>
-        Liked by {likes} people.
+        <div className="post__rating">
+          Rating: {rating !== undefined ? rating : "N/A"} / 5
+        </div>
       </div>
     </div>
   );

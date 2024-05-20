@@ -4,6 +4,7 @@
 }
 
 .post__header {
+  color: black;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -12,6 +13,7 @@
 }
 
 .post__headerAuthor {
+  color: black;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -19,7 +21,7 @@
 }
 
 .post__headerAuthor > span {
-  color: grey;
+  color: black;
   font-size: 15px;
 }
 
@@ -33,6 +35,7 @@
 }
 
 .post__footerIcons {
+  color: black;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -46,4 +49,10 @@
 
 .postIcon :hover {
   cursor: pointer;
+}
+
+.post__rating {
+  color: black;
+  margin-top: 10px;
+  font-weight: bold;
 }
