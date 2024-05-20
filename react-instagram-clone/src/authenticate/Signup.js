@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "./Signup.css";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
@@ -27,36 +27,30 @@ function Signup() {
       });
   };
   return (
-    <div className="flex flex-col border border-slate-500 p-12 mx-7.5">
+    <div className="signup">
       <img
-      className="w-50 mx-auto mb-10"
         src="https://www.pngkey.com/png/full/828-8286178_mackeys-work-needs-no-elaborate-presentation-or-distracting.png"
         alt=""
       />
       <input
-        className="bg-white border-1 border-gray-500 rounded p-3 mb-2.5 text-white focus:outline outline-slate-500"
         onChange={(e) => setEmail(e.target.value)}
         type="email"
         placeholder="Email"
         value={email}
       />
       <input
-        className="bg-white border-1 border-gray-500 rounded p-3 mb-2.5 text-white focus:outline outline-slate-500"
         onChange={(e) => setUsername(e.target.value)}
         type="email"
         placeholder="Username"
         value={username}
       />
       <input
-        className="bg-white border-1 border-gray-500 rounded p-3 mb-2.5 text-white focus:outline outline-slate-500"
         onChange={(e) => setPassword(e.target.value)}
         type="password"
         placeholder="Password"
         value={password}
       />
-      <button
-      className="p-3 rounded-lg border-0 font-bold text-white bg-sky-500 hover:cursor-pointer"
-      onClick={handleSignUp}>Sign up</button>
+      <button onClick={handleSignUp}>Sign up</button>
     </div>
   );
 }
