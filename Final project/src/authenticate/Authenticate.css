@@ -1,0 +1,56 @@
+.authenticate {
+  display: flex;
+  justify-content: center; /* Center the children horizontally */
+  align-items: center; /* Center the children vertically */
+  min-height: 100vh; /* Make sure it takes the full viewport height */
+  background-color: #f0f2f5; /* Optional: Add a background color */
+}
+
+.auth__right {
+  flex: 1;
+  max-width: 33%; /* Ensure it takes one-third of the screen */
+  min-width: 300px; /* Ensure a minimum width */
+  margin: 0 50px;
+  background: white; /* Optional: Add a background color */
+  padding: 20px; /* Optional: Add some padding */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.auth__left > img {
+  width: 400px;
+  margin-top: 40px;
+}
+
+.auth__more {
+  border: 1px solid grey;
+  padding: 10px 20px; /* Add padding to the button */
+  margin-top: 20px; /* Add margin to separate from the form */
+  text-align: center;
+  border-radius: 5px; /* Add border radius for better aesthetics */
+  cursor: pointer;
+  background-color: white; /* Optional: Add a background color */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  transition: background-color 0.3s; /* Add transition for hover effect */
+}
+
+.auth__more:hover {
+  background-color: #f0f0f0; /* Change background color on hover */
+}
+
+.auth__more > span {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.auth__more > span > button {
+  background: 0;
+  border: 0;
+  font-weight: bolder;
+  color: black;
+  cursor: pointer;
+  padding: 0;
+}
+
+.auth__more > span > button:hover {
+  color: #800020;
+}
